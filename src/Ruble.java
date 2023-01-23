@@ -2,17 +2,18 @@ public class Ruble {
 
     public static void main(String[] args) {
         int start = 100;
-        int dep = 300;
+        int dep = 1120;
         int bonus;
 
-        if (dep >= 100) {
+        if (dep > 1000) {
             bonus = dep / 100;
         } else {
             bonus = 0;
         }
         int bank = start + dep;
-        int x = bank + bonus;
+        int total = bank + bonus;
 
-        System.out.println("Итоговый баланс " + x);
+        System.out.println("Итоговый баланс " + total);
+        System.out.println("Бонус " + bonus);
     }
 }
